@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Masha Ruby](https://htmlacademy.ru/profile/id6191).
-* Наставник: `Неизвестно`.
+* Наставник: [Ирина Шефер](https://htmlacademy.ru/profile/id33806).
 
 ---
 
