@@ -6,139 +6,127 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-  <header class="main-header">
-    <div class="container">
-      <div class="main-header-navigation">
+    <header class="main-header">
+      <div class="container">
+        <div class="main-header-navigation">
+          <ul>
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Фото и видео</a></li>
+            <li><img src="img/logo-sedona.png" alt="Логотип Седоны"></li>
+            <li><a href="#">Карта штата</a></li>
+            <li><a href="#">Гостиницы</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="filters clearfix">
+        <div class="main-logo">
+          <img src="img/filter-background.jpg" alt="Седона горы">
+        </div>
+        <div class="filter">
+          <h4 class="filter-text">Инфраструктура:</h4>
+          <label class="filter-item"><input type="checkbox" checked>Бассейн</label><br>
+          <label class="filter-item"><input type="checkbox">Парковка</label><br>
+          <label class="filter-item"><input type="checkbox">Wi-Fi</label>
+        </div>
+
+        <div class="filter">
+          <h4 class="filter-text">Тип жилья:</h4>
+          <label class="filter-item"><input type="checkbox" checked>Гостиница</label><br>
+          <label class="filter-item"><input type="checkbox" checked>Мотель</label><br>
+          <label class="filter-item"><input type="checkbox" checked>Апартаменты</label>
+        </div>
+
+        <div class="filter">
+          <h4 class="filter-text">Стоимость в сутки (р):</h4>
+          <div class="filter-price-controls">
+            <input class="min-price" type="text" value="от 0">
+            <input class="max-price" type="text" value="до 3000">
+          </div>
+          <input type="range" min="0" max="3000" step="1">
+          <input type="submit" value="Показать">
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <div class="navigation">
+        <h3 class="navigation-search">Найдено: 3</h3>
+        <span class="navigation-search-method">Сортировка</span>
         <ul>
-          <li>
-            <a href="#">Информация</a>
-          </li>
-          <li>
-            <a href="#">Фото и видео</a>
-          </li>
-          <li>
-            <img src="img/logo-sedona.png" alt="Логотип Седоны">
-          </li>
-          <li>
-            <a href="#">Карта штата</a>
-          </li>
-          <li>
-            <a href="#">Гостиницы</a>
-          </li>
+          <li class="navigation-search-method-price"><a href="#">По цене</a></li>
+          <li class="navigation-search-method-type"><a href="#">По типу</a></li>
+          <li class="navigation-search-method-rating"><a href="#">По рейтингу</a></li>
         </ul>
       </div>
-    </div>
-    <div class="filter">
-      <img src="img/filter-background.jpg" alt="Седона горы">
-      <div class="filter-first">
-        <h4 class="filter-first-addition">Инфраструктура:</h4>
-        <label class="filter-item">
-          <input type="checkbox" checked>
-          Бассейн
-        </label>
-        <label class="filter-item">
-          <input type="checkbox">
-          Парковка
-        </label>
-        <label class="filter-item">
-          <input type="checkbox">
-          WI-FI
-        </label>
-      </div>
 
-      <div class="filter-second">
-        <h4 class="filter-second-type">Тип жилья:</h4>
-        <label class="filter-item">
-          <input type="checkbox" checked>
-          Гостиница
-        </label>
-        <label class="filter-item">
-          <input type="checkbox" checked>
-          Мотель
-        </label>
-        <label class="filter-item">
-          <input type="checkbox" checked>
-          Апартаменты
-        </label>
-      </div>
-
-      <div class="filter-third">
-        <h4 class="filter-third-price">Стоимость в сутки (р):</h4>
-        <div class="filter-third-price-controls">
-          <input class="min-price" type="text" value="от 0">
-          <input class="max-price" type="text" value="до 3000">
+      <div class="main-block">
+        <div class="object clearfix">
+          <div class="object-picture">
+            <img src="img/amara-resort.jpg" alt="Фотография гостиницы">
+          </div>
+          <div class="object-title">
+            <h3 class="object-card">Amara Resort and Spa</h3>
+            <ul>
+              <li class="object-card-name">Гостиница</li>
+              <li class="object-card-price">от 3500 р.</li>
+            </ul>
+            <a class="object-details" href="#">Подробнее</a>
+            <button class="objet-reserve">Забронировать</button>
+          </div>
+          <div class="object-score">
+            <img src="#" alt="Рейтинг">
+            <div class="object-rating">Рейтинг: 8,5</div>
+          </div>
         </div>
-        <input type="range" min="0" max="3000" step="1">
-        <input type="submit" value="Показать">
-      </div>
-    </div>
-  </header>
-  <main class="container">
-    <div class="navigation">
-      <h3 class="navigation-search">Найдено: 3</h3>
-      <span class="navigation-search-method">Сортировка</span>
-      <ul>
-        <li class="navigation-search-method-price">По цене</li>
-        <li class="navigation-search-method-type">По типу</li>
-        <li class="navigation-search-method-rating">По рейтингу</li>
-      </ul>
-    </div>
 
-    <div class="object">
-      <img src="img/amara-resort.jpg" alt="Фотография гостиницы"
-      <h3 class="object-card">Amara Resort and Spa</h3>
-      <ul>
-        <li class="object-card-name">Гостиница</li>
-        <li class="object-card-price">от 3500 р.</li>
-      </ul>
-      <button>Подробнее</button>
-      <button>Забронировать</button>
-      <img src="#" alt="Рейтинг">
-      <div class="object-rating">
-        Рейтинг: 8,5
-      </div>
-    </div>
+        <div class="object clearfix">
+          <div class="object-picture">
+            <img src="img/desert-quail.jpg" alt="Фотография мотеля">
+          </div>
+          <div class="object-title">
+            <h3 class="object-card">Desert Quail Inn</h3>
+            <ul>
+              <li class="object-card-name">Мотель</li>
+              <li class="object-card-price">от 2000 р.</li>
+            </ul>
+            <a class="object-details" href="#">Подробнее</a>
+            <button class="objet-reserve">Забронировать</button>
+          </div>
+          <div class="object-score">
+            <img src="#" alt="Рейтинг">
+            <div class="object-rating">Рейтинг: 8,9</div>
+          </div>
+        </div>
 
-    <div class="object">
-      <img src="img/desert-quail.jpg" alt="Фотография мотеля"
-      <h3 class="object-card">Desert Quail Inn</h3>
-      <ul>
-        <li class="object-card-name">Мотель</li>
-        <li class="object-card-price">от 2000 р.</li>
-      </ul>
-      <button>Подробнее</button>
-      <button>Забронировать</button>
-      <img src="#" alt="Рейтинг">
-      <div class="object-rating">
-        Рейтинг: 8,9
+        <div class="object clearfix">
+          <div class="object-picture">
+            <img src="img/villas.jpg" alt="Фотография апартаментов">
+          </div>
+          <div class="object-title">
+            <h3 class="object-card">Villas At Poco Diablo</h3>
+            <ul>
+              <li class="object-card-name">Апартаменты</li>
+              <li class="object-card-price">от 4000 р.</li>
+            </ul>
+            <a class="object-details" href="#">Подробнее</a>
+            <button class="objet-reserve">Забронировать</button>
+          </div>
+          <div class="object-score">
+            <img src="#" alt="Рейтинг">
+            <div class="object-rating">Рейтинг: 9,2</div>
+          </div>
+        </div>
       </div>
-    </div>
-
-    <div class="object">
-      <img src="img/villas.jpg" alt="Фотография апартаментов"
-      <h3 class="object-card">Villas At Poco Diablo</h3>
-      <ul>
-        <li class="object-card-name">Апартаменты</li>
-        <li class="object-card-price">от 4000 р.</li>
-      </ul>
-      <button>Подробнее</button>
-      <button>Забронировать</button>
-      <img src="#" alt="Рейтинг">
-      <div class="object-rating">
-        Рейтинг: 9,2
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer-container">
+        <div class="main-footer-container-hashtag">#VISITSEDONA</div>
+        <div class="main-footer-container-social">
+          <a class="main-footer-container-social-link-tw" href="#"><img src="" alt="Иконка твиттера"></a>
+          <a class="main-footer-container-social-link-fb" href="#"><img src="" alt="Иконка фейсбука"></a>
+          <a class="main-footer-container-social-link-yt" href="#"><img src="" alt="Иконка ютьюба"></a>
+        </div>
+        <div class="main-footer-container-logo"><img src="img/logo-htmlacademy.png" alt="Логотип htmlacademy"></div>
       </div>
-    </div>
-  </main>
-  <footer class="main-footer">
-    <div class="main-footer-container">
-      <div class="hashtag">#VISITSEDONA</div>
-      <div class="main-footer-container-social">
-        <a class="main-footer-container-social-link-tw" href="#"><img src="" alt="Иконка твиттера"></a>
-        <a class="main-footer-container-social-link-fb" href="#"><img src="" alt="Иконка фейсбука"></a>
-        <a class="main-footer-container-social-link-yt" href="#"><img src="" alt="Иконка ютьюба"></a>
-      </div>
-      <div class="main-footer-container-logo"><img src="img/logo-htmlacademy.png" alt="Логотип htmlacademy"></div>
-    </div>
-  </footer>
+    </footer>
   </body>
 </html>

@@ -5,7 +5,40 @@
   color: black;
 }
 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.object-picture {
+  float: left;
+}
+
+.object-title {
+  float: left;
+}
+
+.object-score {
+  float: right;
+}
+
+.index-content {
+  float :left;
+  width: 1200px;
+  min-height: 256px;
+}
+
+.index-content-block {
+  float: left;
+}
+
+.index-content-icon {
+  text-align: center;
+}
+
 .index-content-title {
+  text-align: center;
   font-size: 21px;
   font-family: PT Sans Bold Bold;
   font-weight: bold;
@@ -13,174 +46,75 @@
 }
 
 .index-content-title-text {
+  text-align: center;
   font-size: 14px;
   font-family: PT Sans Regular;
   font-weight: Regular;
-  color: 1d1d1d;
+  color: #1d1d1d;
 }
 
-.index-content-title-1 {
-  font-size: 21px;
-  font-family: PT Sans Bold;
-  font-weight: bold;
-  color: white;
-}
-
-.index-content-title-text-1 {
-  font-size: 21px;
-  font-family: PT Sans Bold;
-  font-weight: bold;
-  color: white;
-}
-
-.index-content-left-title {
+.index-content-search-title {
+  text-align: center;
   font-size: 21px;
   font-family: PT Sans Bold;
   font-weight: bold;
   color: black;
 }
 
-.index-content-left-title-text {
+.index-content-search-options {
+  text-align: center;
   font-size: 14px;
-  font-family: PT Sans Regular;
-  font-weight: regular;
-  color: #333333;
+  font-family: PT Sans Bold;
+  font-weight: bold;
+  color: black;
 }
 
-.index-content-center-title {
+.index-content-search-title-options-btn {
   font-size: 21px;
   font-family: PT Sans Bold;
   font-weight: bold;
   color: black;
 }
 
-.index-content-center-title-text {
-  font-size: 14px;
-  font-family: PT Sans Regular;
-  font-weight: regular;
-  color: #333333;
-}
-
-.index-content-right-title {
-  font-size: 21px;
-  font-family: PT Sans Bold;
-  font-weight: bold;
-  color: black;
-}
-
-.index-content-right-title-text {
-  font-size: 14px;
-  font-family: PT Sans Regular;
-  font-weight: regular;
-  color: #333333;
-}
-
-.index-content-title-2 {
-  font-size: 21px;
-  font-family: PT Sans Bold;
-  font-weight: bold;
-  color: white;
-}
-
-.index-content-title-text-2 {
+.object-details {
   font-size: 14px;
   font-family: PT Sans Regular;
   font-weight: regular;
   color: white;
 }
 
-.index-content-left-title-3 {
-  font-size: 21px;
-  font-family: PT Sans Bold;
-  font-weight: bold;
-  color: black;
-}
-
-.index-content-left-title-text-3 {
-  font-size: 13px;
-  font-family: PT Sans Regular;
-  font-weight: regular;
-  color: black;
-}
-
-.index-content-center-title-4 {
-  font-size: 21px;
-  font-family: PT Sans Bold;
-  font-weight: bold;
-  color: black;
-}
-
-.index-content-center-title-text-4 {
+.objet-reserve {
   font-size: 14px;
   font-family: PT Sans Regular;
   font-weight: regular;
-  color: black;
-}
-
-.index-content-right-title-5 {
-  font-size: 21px;
-  font-family: PT Sans Bold;
-  font-weight: bold;
-  color: black;
-}
-
-.index-content-right-title-text-5 {
-  font-size: 14px;
-  font-family: PT Sans Regular;
-  font-weight: regular;
-  color: black;
-}
-
-.index-content-title-map {
-  font-size: 30px;
-  font-family: PT Sans Bold;
-  font-weight: bold;
-  color: black;
-}
-
-.index-content-title-map-text {
-  font-size: 14px;
-  font-family: PT Sans Regular;
-  font-weight: regular;
-  color: black;
-}
-
-.index-content-center-title-search {
-  font-size: 21px;
-  font-family: PT Sans Bold;
-  font-weight: bold;
-  color: white;
-}
-
-.index-content-center-title-search-options {
-  font-size: 14px;
-  font-family: PT Sans Bold;
-  font-weight: bold;
-  color: black;
-}
-
-.index-content-center-title-search-options-btn {
-  font-size: 21px;
-  font-family: PT Sans Bold;
-  font-weight: bold;
   color: white;
 }
 
 .main-footer-container-hashtag {
+  float: left;
   font-size: 21px;
   font-family: PT Sans Bold;
   font-weight: bold;
   color: black;
 }
 
-.filter-first-addition {
-  font-size: 16px;
-  font-family: PT Sans Bold;
-  font-weight: bold;
-  color: white;
+.main-footer-container-social {
+  float: left;
 }
 
-.filter-second-type {
+.main-footer-container-logo {
+  float: right;
+}
+
+.filter {
+  float: left;
+}
+
+.filter:last-child {
+  float: right;
+}
+
+.filter-text {
   font-size: 16px;
   font-family: PT Sans Bold;
   font-weight: bold;
@@ -191,13 +125,6 @@
   font-size: 14px;
   font-family: PT Sans Regular;
   font-weight: regular;
-  color: white;
-}
-
-.filter-third-price {
-  font-size: 16px;
-  font-family: PT Sans Bold;
-  font-weight: bold;
   color: white;
 }
 
@@ -220,6 +147,7 @@
   font-family: PT Sans Regular;
   font-weight: regular;
   color: #81b3d2;
+  display: inline;
 }
 
 .navigation-search-method-type {
@@ -227,6 +155,7 @@
   font-family: PT Sans Regular;
   font-weight: regular;
   color: #white;
+  display: inline;
 }
 
 .navigation-search-method-rating {
@@ -234,6 +163,7 @@
   font-family: PT Sans Regular;
   font-weight: regular;
   color: white;
+  display: inline;
 }
 
 .object-card {
