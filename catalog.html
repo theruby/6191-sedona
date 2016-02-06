@@ -22,29 +22,31 @@
         <div class="main-logo">
           <img src="img/filter-background.jpg" alt="Седона горы">
         </div>
-        <div class="filter">
-          <h4 class="filter-text">Инфраструктура:</h4>
-          <label class="filter-item"><input type="checkbox" checked>Бассейн</label><br>
-          <label class="filter-item"><input type="checkbox">Парковка</label><br>
-          <label class="filter-item"><input type="checkbox">Wi-Fi</label>
-        </div>
-
-        <div class="filter">
-          <h4 class="filter-text">Тип жилья:</h4>
-          <label class="filter-item"><input type="checkbox" checked>Гостиница</label><br>
-          <label class="filter-item"><input type="checkbox" checked>Мотель</label><br>
-          <label class="filter-item"><input type="checkbox" checked>Апартаменты</label>
-        </div>
-
-        <div class="filter">
-          <h4 class="filter-text">Стоимость в сутки (р):</h4>
-          <div class="filter-price-controls">
-            <input class="min-price" type="text" value="от 0">
-            <input class="max-price" type="text" value="до 3000">
+        <form>
+          <div class="filter">
+            <h4 class="filter-text">Инфраструктура:</h4>
+            <label class="filter-item"><input type="checkbox" checked>Бассейн</label><br>
+            <label class="filter-item"><input type="checkbox">Парковка</label><br>
+            <label class="filter-item"><input type="checkbox">Wi-Fi</label>
           </div>
-          <input type="range" min="0" max="3000" step="1">
-          <input type="submit" value="Показать">
-        </div>
+
+          <div class="filter">
+            <h4 class="filter-text">Тип жилья:</h4>
+            <label class="filter-item"><input type="checkbox" checked>Гостиница</label><br>
+            <label class="filter-item"><input type="checkbox" checked>Мотель</label><br>
+            <label class="filter-item"><input type="checkbox" checked>Апартаменты</label>
+          </div>
+
+          <div class="filter">
+            <h4 class="filter-text">Стоимость в сутки (р):</h4>
+            <div class="filter-price-controls">
+              <input class="min-price" type="text" value="от 0">
+              <input class="max-price" type="text" value="до 3000">
+            </div>
+            <input type="range" min="0" max="3000" step="1">
+            <input type="submit" value="Показать">
+          </div>
+        </form>
       </div>
     </header>
     <main class="container">
